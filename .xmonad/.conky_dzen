@@ -8,4 +8,4 @@ use_xft yes
 xftfont Courier:5
 
 TEXT
-${battery}    ^fg(\#00aa4a)Net:${downspeed eth1} ^fg(\#ff3333)${upspeed eth1} ^fg(\#FFFFFF)Mem:${memperc}% ^fg(\#ebac54)Vol:^fg(\#00ffff)${exec amixer get Headphone | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}% ^fg(\#ebac54)  ^fg(\#FFFFFF) ${time %d/%m/%Y} ^fg(\#ebac54) ${time %R}
+^fg(\#ffd173)Bat:^fg(\#5DC8CD)${battery}     ^fg(\#ffd173)Mem:^fg(\#5DC8CD)${memperc}% ^fg(\#ffd173)Vol:^fg(\#5DC8CD)${exec amixer get Master | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}% ^fg(\#ffd173)  ^fg(\#ffd173) ${time %d/%m/%Y} ^fg(\#5DC8CD)${time %R}
